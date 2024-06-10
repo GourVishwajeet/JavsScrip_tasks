@@ -58,3 +58,32 @@ const myObject={
 }
 
 console.log(typeof myObject)
+
+
+/* memory Types===> two types
+1. Stack ==>primitives:It makes copy of original variable adn changes the copied variable.
+2. Heap  ==>Non-Primitives(reference):It changes the original object.
+*/
+//example:stack===>
+
+    let name1 = 'varun';
+    let name2 = name1
+
+    name2 ='abhishek'
+
+    // console.log(name1)===>varun
+    // console.log(name2)===>abhishek
+
+
+ let  obj1={
+        class:8,
+        sec:'b'
+    };
+     obj1.class=9
+     obj1.sec='c'
+
+     console.log(obj1)
+     console.log(typeof obj1)
+
+    
+
